@@ -19,12 +19,12 @@ $(function () {
       $(".shopping-list").append(itemStyle);
     });
   
-    $('.shopping-item-toggle').on('click', e => {
+    $(".shopping-list").on('click','.shopping-item-toggle', e => {
   
       $(e.currentTarget).parent().siblings(".shopping-item").toggleClass("shopping-item__checked");
     });
   
-    $('.shopping-item-delete').on('click', e => {
+    $(".shopping-list").on('click','.shopping-item-delete' ,e => {
       $(e.currentTarget).closest("li").remove();
   
     });
